@@ -195,7 +195,7 @@ npx http-server -p 8080
 
 Tertarik bekerja sama atau ingin mendiskusikan implementasi proyek web/mobile? Silakan hubungi:
 
-- **Nama**: Eka S.
+- **Nama**: Ridho
 - **Peran**: Full-Stack Web & Flutter Mobile Developer
 - **WhatsApp**: [+62 813-1168-5803](https://wa.me/6281311685803)
 - **Email**: [eka.developer@example.com](mailto:eka.developer@example.com)
