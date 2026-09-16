@@ -1,137 +1,262 @@
-# DevPortfolio — Eka S.
+# DevPortfolio — Ridho D.T
 
 ### Full-Stack Web & Flutter Mobile Developer Portfolio
 
-Website portofolio developer modern berkinerja tinggi yang dirancang khusus menggunakan arsitektur **Bento Grid** dan estetika **Dark Bento Glass** (translucent frosted panels dengan aksen neon Electric Indigo, Cyber Cyan, dan Warm Amber). Website ini dibangun untuk memamerkan keahlian rekayasa perangkat lunak multi-platform mencakup Flutter (iOS & Android), Web Architecture, Point of Sale (POS) & ERP, serta ekosistem E-Commerce.
+Dokumentasi resmi website portofolio profesional **Ridho D.T** (atau **Ridho**) yang dirancang sesuai implementasi data pada [`index.html`](file:///d:/pelatihan/project/portofolio/index.html), memadukan arsitektur **Bento Grid** modern dengan estetika **Dark Bento Glass** (`#0b1326`, Electric Indigo `#c0c1ff`, Cyber Cyan `#4cd7f6`, dan Warm Amber `#ffb95f`).
 
 ---
 
 ## Daftar Isi
 
-- [Ikhtisar Proyek](#ikhtisar-proyek)
-- [Fitur Utama](#fitur-utama)
-- [Arsitektur & Desain Sistem](#arsitektur--desain-sistem)
-- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
-- [Struktur Direktori](#struktur-direktori)
-- [Cara Menjalankan](#cara-menjalankan)
-- [Daftar Proyek Unggulan](#daftar-proyek-unggulan)
-- [Kontak & Kolaborasi](#kontak--kolaborasi)
+- [Profil Singkat](#profil-singkat)
+- [Struktur & Konten Halaman](#struktur--konten-halaman)
+  - [1. Header & Navigasi](#1-header--navigasi)
+  - [2. Hero Section](#2-hero-section)
+  - [3. Tentang Saya (Profil & Prinsip)](#3-tentang-saya-profil--prinsip)
+  - [4. Tingkat Pendidikan (Rekam Jejak Akademis)](#4-tingkat-pendidikan-rekam-jejak-akademis)
+  - [5. Pengalaman Kerja (Pengalaman & Kontribusi)](#5-pengalaman-kerja-pengalaman--kontribusi)
+  - [6. Proyek Unggulan (Karya Nyata)](#6-proyek-unggulan-karya-nyata)
+  - [7. Keahlian & Tech Stack (Arsenal Teknologi)](#7-keahlian--tech-stack-arsenal-teknologi)
+  - [8. Hubungi Saya (Mulai Kolaborasi & Contact Terminal)](#8-hubungi-saya-mulai-kolaborasi--contact-terminal)
+  - [9. Modal Curriculum Vitae (CV)](#9-modal-curriculum-vitae-cv)
+  - [10. Footer](#10-footer)
+- [Struktur File & Aset](#struktur-file--aset)
+- [Cara Menjalankan Website](#cara-menjalankan-website)
+- [Kontak Resmi](#kontak-resmi)
 - [Lisensi](#lisensi)
 
 ---
 
-## Ikhtisar Proyek
+## Profil Singkat
 
-Website ini dirancang secara mandiri (_standalone_), ringan, cepat diakses, dan sepenuhnya responsif di semua perangkat (Desktop, Tablet, dan Mobile Smartphone). Seluruh aset media disimpan secara lokal di dalam folder `assets/images/` untuk menjamin keandalan pemuatan gambar secara instan tanpa ketergantungan CDN eksternal.
-
----
-
-## Fitur Utama
-
-### 1. Header & Navigasi Cerdas
-
-- **Fixed Glass Navbar**: Bilah navigasi melayang dengan efek `backdrop-blur-xl`, border tipis elegan, dan breadcrumb monospaced `DevPortfolio / Eka / Developer`.
-- **Active Scrollspy (IntersectionObserver)**: Otomatis mendeteksi bagian halaman yang sedang dilihat pengguna dan menyorot menu navigasi yang sesuai secara real-time.
-- **Mobile Responsive Drawer**: Menu navigasi responsif yang dapat dibuka/tutup dengan mulus di perangkat layar kecil.
-- **Modal Unduh CV**: Dialog interaktif untuk melihat ringkasan Curriculum Vitae dengan opsi cetak langsung atau simpan ke PDF.
-
-### 2. Hero Section Berdaya Tarik Tinggi
-
-- **Live Status Beacon**: Indikator cyan berkedip (_pulsing badge_) `Tersedia untuk Proyek Baru & Full-time`.
-- **Headline Gradien**: Tipografi berbobot tebal (_Inter 800_) dengan gradien visual `Cepat, Skalalabel, dan Berdampak`.
-- **Terminal Status Pill**: Telemetri singkat `$ stack --status Flutter 3.x, React 19, Laravel 11, Node.js` dan status `⚡ Ready for Production`.
-- **Bento Profile Card**: Kartu profil developer terintegrasi dengan foto asli beresolusi tinggi, lencana terverifikasi `Verified Lead Dev`, status `Cross-Platform Specialist`, dan metrik performa (3+ Tahun Pengalaman, 10+ Proyek Selesai, 99% Kepuasan Klien).
-
-### 3. Bagian Tentang Saya (Bento Grid)
-
-- Modul kartu terstruktur yang menjelaskan prinsip rekayasa:
-  - **Dari Konsep hingga Produksi**: Alur kerja dari perancangan arsitektur, basis data, API hingga rilis.
-  - **Clean Architecture**: Penerapan prinsip SOLID & DRY, memisahkan business logic dari presentation layer.
-  - **Pixel-Perfect UI**: Presisi rendering 60–120 FPS di Flutter iOS & Android serta web responsif.
-  - **Database & API**: Kueri teroptimasi, token JWT aman, dan latensi minimum.
-  - **Penerbitan Google Play Store & Cloud**: Pengalaman App Signing, VPS Ubuntu, Docker, dan CDN.
-
-### 4. Tingkat Pendidikan Berjenjang
-
-Menampilkan dokumentasi visual foto asli institusi pendidikan:
-
-- **Sekolah Dasar (SD)** (2008 — 2014) — _Tahap Fondasi & Karakter_.
-- **SMP Global Islamic School** (2014 — 2017) — _Logika Matematika, Sains Terapan, & Wawasan Global_.
-- **Pendidikan Tinggi (S1) Rekayasa Perangkat Lunak / Teknik Informatika** — _Spesialisasi Software Engineering, Distributed Systems, dan Mobile Flutter_.
-
-### 5. Pengalaman Kerja & Rekam Jejak
-
-- **Lead Mobile & Full-Stack Developer** (2023 — Sekarang) — Memimpin perancangan multi-platform Flutter dan REST API.
-- **Full-Stack Web Developer** (2021 — 2023) — Membangun modul E-Commerce dan POS inventory multi-cabang.
-- **Mobile Application Engineer Intern** (2020 — 2021) — Implementasi UI/UX Flutter, SQLite cache lokal, dan Firebase.
-
-### 6. Proyek Unggulan Interaktif
-
-- **Filter Kategori Dinamis**: Tombol filter instan (`Semua`, `Web`, `Mobile`, `ERP/POS`) dengan transisi animasi yang halus.
-- **Modal Pratinjau Detail**: Menampilkan popup beresolusi tinggi dengan ringkasan fitur unggulan dan daftar teknologi yang digunakan saat kartu proyek diklik.
-- **Simulasi Interaktif Smartphone Flutter**: Mockup perangkat bergerak dengan tombol _Tap Simulasikan Sync Data_ yang menambahkan transaksi simulasi real-time ke layar antarmuka.
-
-### 7. Keahlian & Tech Stack Matrix
-
-Daftar perangkat teknologi terbagi dalam 4 pilar industri:
-
-- **Mobile Development**: Flutter, Dart, Android SDK, iOS Swift Basics, Riverpod, BLoC, SQLite, Hive.
-- **Frontend Web**: JavaScript (ES6+), TypeScript, React, Next.js, Vue.js, Tailwind CSS, HTML5, CSS3.
-- **Backend & Database**: Laravel, PHP, Node.js, Express, RESTful API, MySQL, PostgreSQL, Firebase.
-- **Tools & Workflow**: Git, GitHub Actions, Docker, Figma, Postman, Linux VPS, Nginx.
-
-### 8. Formulir Kontak Bergaya Command-Line Terminal
-
-- Antarmuka formulir bertema terminal `contact_terminal.sh` dengan indikator `ONLINE`.
-- Field input interaktif: `$ input --name`, `$ input --email`, `$ input --subject`, dan `$ input --message`.
-- Simulasi pengiriman payload dengan indikator status HTTP 200 OK.
-- Tautan kontak langsung ke WhatsApp (`+62 813-1168-5803`), Email profesional, LinkedIn, dan GitHub.
+- **Nama**: Ridho D.T (atau Ridho)
+- **Spesialisasi**: Full-Stack Web & Flutter Mobile Developer / Cross-Platform Specialist
+- **Fokus Utama**: Performa tinggi (60–120 FPS), Clean Architecture, antarmuka UI/UX pixel-perfect, database teroptimasi, serta kesiapan rilis Google Play Store & Cloud VPS.
+- **Pengalaman**: 3+ Tahun Pengalaman
+- **Proyek Selesai**: 10+ Proyek Selesai
+- **Tingkat Kepuasan Klien**: 99%
+- **Status Ketersediaan**: Tersedia untuk Proyek Baru & Full-time (Available for hire / freelance)
 
 ---
 
-## Arsitektur & Desain Sistem
+## Struktur & Konten Halaman
 
-Website ini mengadopsi standar sistem desain yang tertuang dalam perancangan modern:
+Sesuai dengan hierarki dan data pada file `index.html`, berikut adalah rincian setiap modul:
 
-- **Background Utama**: `#0b1326` (Deep Void Slate Canvas).
-- **Primary Accent**: `#c0c1ff` / `#6366F1` (Electric Indigo).
-- **Secondary Accent**: `#4cd7f6` / `#06B6D4` (Cyber Cyan).
-- **Tertiary Accent**: `#ffb95f` / `#F59E0B` (Warm Amber).
-- **Surfaces**: Translucent Dark Bento Cards dengan `rgba(23, 31, 51, 0.75)`, `backdrop-filter: blur(16px)`, dan perimeter stroke `1px solid rgba(255, 255, 255, 0.07)`.
-- **Tipografi**:
-  - Teks Heading & Narasi: **Inter** (400, 500, 600, 700, 800)
-  - Telemetri Kode & Label: **JetBrains Mono** (400, 500, 600)
+### 1. Header & Navigasi
+
+- **Brand**: Lencana monogram `EP` dengan teks monospaced `DevPortfolio / Ridho / Developer`.
+- **Menu Navigasi Desktop**:
+  - `Tentang Saya` (`#tentang-saya`)
+  - `Pendidikan` (`#pendidikan`)
+  - `Pengalaman` (`#pengalaman`)
+  - `Proyek Unggulan` (`#proyek-unggulan`)
+  - `Tech Stack` (`#tech-stack`)
+- **Fitur Navigasi**: Active Scrollspy (_IntersectionObserver_) yang otomatis menyorot menu aktif saat halaman digulir.
+- **Aksi Cepat**: Tombol **Unduh CV** (membuka modal CV), tombol **Hubungi Saya** (menggulir ke `#hubungi-saya`), ikon profil (`title="Profil Ridho"`), dan tombol toggle menu drawer responsif untuk perangkat mobile.
+
+### 2. Hero Section
+
+- **Status Beacon**: Lencana cyan berkedip `Tersedia untuk Proyek Baru & Full-time`.
+- **Headline Utama**: _"Membangun Pengalaman Web & Mobile yang Cepat, Skalalabel, dan Berdampak."_
+- **Sub-headline**: Full-Stack Web & Flutter Mobile Developer berfokus pada performa tinggi, clean architecture, dan UI/UX yang memikat pengguna untuk skala startup hingga enterprise.
+- **Tombol Aksi**:
+  - `Lihat Proyek Unggulan` (Ikon _rocket_launch_)
+  - `Hubungi Saya` (Ikon _mail_)
+- **Terminal Status Pill**:
+  - Command: `$ stack --status Flutter 3.x, React 19, Laravel 11, Node.js`
+  - Status: `Ready for Production`
+- **Visual Profile Bento**:
+  - Foto profil asli: `assets/images/profile.jpg` (alt: `Foto Profil Developer Ridho`)
+  - Lencana verifikasi: `Verified Lead Dev`
+  - Lencana bawah: `Ridho D.T / Cross-Platform Specialist`
+  - 3 Metrik Cepat: `3+ Thn Pengalaman`, `10+ Proyek Selesai`, `99% Kepuasan Klien`
+
+### 3. Tentang Saya (Profil & Prinsip)
+
+- **Tag Subtitle**: `PROFIL & PRINSIP`
+- **Deskripsi Bagian**: Developer yang berdedikasi menciptakan solusi digital tangguh dari core logic, desain sistem UI/UX terpadu, hingga tahap rilis Google Play Store & Cloud Infrastructure.
+- **5 Kartu Bento**:
+  1. **Dari Konsep hingga Produksi** (Span 2): Penanganan siklus pengembangan menyeluruh: perancangan database terdistribusi, integrasi API real-time, manajemen state reaktif di Flutter, serta optimasi build.  
+     _Lencana_: `Clean Architecture`, `Reactive State`, `CI/CD Deployments`.
+  2. **Clean Architecture**: Memisahkan business logic dari presentation layer. Modular, mudah diuji (unit & widget testing), dan maintainable.  
+     _Lencana_: `SOLID & DRY`.
+  3. **Pixel-Perfect UI**: Presisi rendering 60–120 FPS di iOS dan Android melalui Flutter, serta antarmuka web responsif dan aksesibel.  
+     _Lencana_: `High Frame Rates`.
+  4. **Database & API**: Optimasi kueri kompleks, caching Redis, token JWT/Sanctum, serta orkestrasi RESTful endpoints latensi rendah.  
+     _Lencana_: `Low-Latency`.
+  5. **Penerbitan Google Play Store & Cloud Infrastructure** (Span 3): Pengalaman mengelola App Signing, bundle release, App Store Review guidelines, deployment VPS Ubuntu, Docker, dan CDN.  
+     _Lencana_: `Play Store Ready`, `Cloud Active`.
+
+### 4. Tingkat Pendidikan (Rekam Jejak Akademis)
+
+- **Tag Subtitle**: `REKAM JEJAK AKADEMIS`
+- **Deskripsi Bagian**: Perjalanan terstruktur yang menumbuhkan disiplin logika, kepemimpinan berwawasan global, hingga pendalaman rekayasa perangkat lunak tingkat universitas.
+- **3 Tingkat Pendidikan Berjenjang**:
+  1. **Sekolah Dasar (SD)** (2008 — 2014)
+     - Foto Dokumentasi: `assets/images/edu_sd.jpg`
+     - Status: `Tahap Fondasi`
+     - Judul: `Pendidikan Dasar & Eksplorasi Dini`
+     - Deskripsi: Membangun fondasi rasa ingin tahu, kecintaan pada sains dasar, dan ketertarikan awal pada dunia teknologi & komputer personal.
+     - Fokus: `Fokus: Karakter & Logika Dasar`
+  2. **Sekolah Menengah Pertama (SMP)** (2014 — 2017)
+     - Foto Dokumentasi: `assets/images/edu_smp.jpg`
+     - Status: `Pengembangan Logika`
+     - Judul: `Global Islamic School`
+     - Deskripsi: Memperdalam kemampuan logika matematika, sains terapan, komunikasi dwi-bahasa, serta kolaborasi aktif dalam proyek studi kelompok.
+     - Fokus: `Wawasan Global & Kolaborasi`
+  3. **Pendidikan Tinggi (D4)**
+     - Foto Dokumentasi: `assets/images/edu_s1.jpg`
+     - Status: `Spesialisasi Akademik`
+     - Program Studi: `Sarjana Ilmu Komputer / Informatika`
+     - Judul: `Rekayasa Perangkat Lunak`
+     - Deskripsi: Fokus mendalam pada Software Engineering, Pengembangan Aplikasi Mobile Terdistribusi, Struktur Data & Algoritma, dan Cloud Computing.
+     - Fokus: `Gelar Sarjana • Skripsi Mobile Flutter`
+
+### 5. Pengalaman Kerja (Pengalaman & Kontribusi)
+
+- **Tag Subtitle**: `PENGALAMAN & KONTRIBUSI`
+- **Deskripsi Bagian**: Rekam jejak kepemimpinan teknik, perancangan arsitektur sistem, dan eksekusi produk digital skala komersial.
+- **Riwayat Peran**:
+  1. **Lead Mobile & Full-Stack Dev** (2023 — Sekarang)
+     - Tipe: `Full-time / Lead` di _Enterprise Digital Solutions_
+     - Deskripsi: Memimpin tim teknis dalam perancangan aplikasi Flutter multi-platform dan arsitektur backend REST API. Bertanggung jawab atas stabilitas deployment, CI/CD, dan evaluasi performa real-time.
+     - Stack Kunci: `Flutter`, `Laravel`, `Docker`
+  2. **Full-Stack Web Developer** (2021 — 2023)
+     - Tipe: `Contract` di _Tech & Retail Clients_
+     - Deskripsi: Mengembangkan platform e-commerce dan aplikasi kasir Point of Sale (POS) modular dengan sinkronisasi inventaris multi-cabang serta payment gateway perbankan nasional.
+     - Stack Kunci: `React`, `Vue.js`, `MySQL`
+  3. **Mobile Application Engineer** (2020 — 2021)
+     - Tipe: `Internship` di _Mobile Innovation Lab_
+     - Deskripsi: Fokus pada implementasi UI/UX interaktif berbasis Flutter, manajemen cache SQLite lokal, push notification Firebase, dan otomatisasi pengujian unit test.
+     - Stack Kunci: `Dart`, `Bloc`, `Firebase`
+
+### 6. Proyek Unggulan (Karya Nyata)
+
+- **Tag Subtitle**: `KARYA NYATA`
+- **Deskripsi Bagian**: Kombinasi platform E-Commerce berskala tinggi, sistem Point of Sale perusahaan, portal edukasi interaktif, dan mesin top-up otomatis.
+- **Filter Kategori**: `Semua`, `Web`, `Mobile`, `ERP/POS`
+- **Daftar Portofolio**:
+  1. **CodeIn Course Platform** (Kategori: `Web`)
+     - Tangkapan Layar: `assets/images/project_codeinko.png`
+     - Tag: `Web Learning LMS` | `Production Ready`
+     - Deskripsi: Platform kursus online interaktif terarah dengan fitur katalog video interaktif, sistem checkout sertifikasi terverifikasi, progress tracker materi siswa, dan editor kode langsung di browser.
+     - Stack: `React / Next.js`, `Tailwind CSS`, `Node.js`, `PostgreSQL`
+     - Aksi: Tombol **Detail Proyek** (membuka dialog modal spesifikasi arsitektur)
+  2. **Eva Collection** (Kategori: `Web`)
+     - Tangkapan Layar: `assets/images/project_evacollection.png`
+     - Tag: `Fashion E-Commerce`
+     - Deskripsi: Portal etalase fashion online stylish dengan pengalaman belanja ultra-responsif, filtering multi-kategori, sistem keranjang pintar, dan integrasi payment gateway instan.
+     - Stack: `Web E-Commerce`, `Payment Gateway`, `UI/UX Design`
+     - Aksi: Tombol **Detail Proyek**
+  3. **Eva POS & ERP Dashboard** (Kategori: `ERP/POS`, `Web`)
+     - Tangkapan Layar: `assets/images/project_evapos.png`
+     - Tag: `Point of Sale & ERP`
+     - Deskripsi: Sistem POS dan manajemen stok terintegrasi dengan grafik pendapatan real-time, rekonsiliasi kasir harian, laporan hutang piutang supplier, serta sinkronisasi multi-outlet offline/online.
+     - Stack: `Laravel 11`, `Vue.js`, `Chart.js`, `MySQL`
+     - Aksi: Tombol **Detail Proyek**
+  4. **WebTopup Game Online** (Kategori: `Mobile`, `Web`)
+     - Tangkapan Layar: `assets/images/project_webtopup.png`
+     - Tag: `High-Traffic Engine`
+     - Deskripsi: Layanan top-up instan voucher game (Mobile Legends, PUBG, Free Fire, Genshin Impact) dengan verifikasi User ID otomatis, integrasi Tripay & Midtrans, dan auto-dispatch 24/7 di bawah 10 detik.
+     - Stack: `Flutter Web / Mobile`, `Midtrans / Tripay`, `Redis Queue`
+     - Aksi: Tombol **Detail Proyek**
+  5. **Showcase Khusus: Aplikasi Mobile Lintas Platform Berkualitas Tinggi** (Kategori: `Mobile`, Full Span 12)
+     - Tag: `Flutter iOS & Android Engine`
+     - Deskripsi: Pengalaman native-feel di kedua platform dengan single codebase yang kokoh, arsitektur offline-first, background sync, dan keamanan biometrik.
+     - 4 Fitur Arsitektur:
+       - `Bloc & Riverpod`: Prediktabilitas data reaktif dan zero-glitch UI.
+       - `Offline-First SQLite / Hive`: Operasional mulus tanpa koneksi internet aktif.
+       - `FCM Push Notification`: Pemberitahuan real-time tertarget dan broadcast.
+       - `Biometrik & Hardware`: Integrasi FaceID, Sidik Jari, Kamera, dan Bluetooth POS.
+     - **Mockup Smartphone Interaktif**:
+       - Status bar: `DevPortfolio App`, Flutter Engine v3.27, POS & Catalog Synced.
+       - Daftar transaksi: `Quick Topup #9842` (Berhasil), `POS Invoice #4411` (Paid).
+       - Interaktivitas: Tombol _Tap Simulasikan Sync Data_ untuk menyimulasikan push order transaksi baru secara visual.
+
+### 7. Keahlian & Tech Stack (Arsenal Teknologi)
+
+- **Tag Subtitle**: `ARSENAL TEKNOLOGI`
+- **Deskripsi Bagian**: Toolkit yang teruji di industri untuk menghasilkan produk digital berkinerja tinggi, modular, dan teruji secara otomatis.
+- **4 Pilar Matriks**:
+  1. **Mobile Development**:
+     - Toolkit: `Flutter`, `Dart`, `Android SDK`, `iOS Swift Basics`, `Riverpod / Bloc`, `SQLite / Hive`
+     - Benchmark: `⚡ 60 FPS Native Pipeline`
+  2. **Frontend Web**:
+     - Toolkit: `JavaScript (ES6+)`, `TypeScript`, `React / Next.js`, `Vue.js`, `Tailwind CSS`, `HTML5 / CSS3`
+     - Benchmark: `⚡ 100% Core Web Vitals`
+  3. **Backend & DB**:
+     - Toolkit: `Laravel / PHP`, `Node.js / Express`, `RESTful API`, `MySQL / MariaDB`, `PostgreSQL`, `Firebase RTDB`
+     - Benchmark: `⚡ Secure Auth & Tokens`
+  4. **Tools & Workflow**:
+     - Toolkit: `Git / GitHub Actions`, `Docker Basics`, `Figma UI/UX`, `Postman API Testing`, `Linux / Nginx VPS`
+     - Benchmark: `⚡ CI/CD Automated`
+
+### 8. Hubungi Saya (Mulai Kolaborasi & Contact Terminal)
+
+- **Tag Subtitle**: `MULAI KOLABORASI`
+- **Judul**: _"Mari Realisasikan Ide Digital Anda"_
+- **Deskripsi**: Diskusi mengenai arsitektur, estimasi pengerjaan, dan implementasi aplikasi mobile, e-commerce, atau sistem POS/ERP.
+- **Tautan Kontak Langsung**:
+  - **WhatsApp**: [+62 813-1168-5803](https://wa.me/6281311685803) (`https://wa.me/6281311685803`)
+  - **Email**: [lavenderpoet607@gmail.com](mailto:lavenderpoet607@gmail.com) (`mailto:lavenderpoet607@gmail.com`)
+  - **LinkedIn**: [linkedin.com/in/ridhotawang](https://linkedin.com/in/ridhotawang) (`https://linkedin.com/in/ridhotawang`)
+  - **GitHub**: [github.com/lavenderpoet607](https://github.com/lavenderpoet607) (`https://github.com/lavenderpoet607`)
+  - **Instagram**: [instagram.com](https://instagram.com) (`https://instagram.com`)
+- **Jaminan Keamanan**: Perjanjian Kerahasiaan (NDA) dan garansi pemeliharaan pasca rilis.
+- **Interactive Contact Terminal (`contact_terminal.sh`)**:
+  - Indikator: `ONLINE` (green pulse)
+  - Fields:
+    - `$ input --name`: Nama Lengkap Anda
+    - `$ input --email`: nama@perusahaan.com
+    - `$ input --subject`: Opsi dropdown (_Pengembangan Aplikasi Mobile (Flutter)_, _Pembuatan Web / E-Commerce / LMS_, _Sistem POS / ERP Inventaris_, _Peluang Kerja / Kontrak Full-time_, _Konsultasi Arsitektur Perangkat Lunak_)
+    - `$ input --message`: Area pesan rincian ide & spesifikasi kebutuhan
+  - Tombol Submit: `Kirim Pesan Sekarang`
+  - Feedback Box: `Status: 200 OK — Pesan telah terkirim! Respon konfirmasi biasanya dibalas dalam waktu < 24 jam.`
+
+### 9. Modal Curriculum Vitae (CV)
+
+- **Judul**: `Curriculum Vitae — Ridho D.T`
+- **Nama Developer**: `Ridho D.T`
+- **Profesi**: `Full-Stack Web & Flutter Mobile Developer`
+- **Ringkasan Profil**: Spesialis pengembangan aplikasi lintas platform (iOS, Android, Web) dengan arsitektur terstruktur (Clean Architecture, BLoC/Riverpod), sistem ERP/POS transaksi tinggi, dan integrasi cloud/API real-time.
+- **Data Pendidikan**:
+  - `D4 Teknik Informatika / Rekayasa Perangkat Lunak` — Fokus pada Arsitektur Mobile & Distributed Systems
+  - `SMP Global Islamic School` (2014 — 2017)
+  - `Sekolah Dasar (SD)` (2008 — 2014)
+- **Keahlian Inti**: Flutter, Dart, React, Next.js, Vue.js, Laravel (PHP), Node.js, RESTful API, PostgreSQL, MySQL, Redis, Docker, Git, CI/CD, Midtrans Payment Gateway.
+- **Aksi Modal**:
+  - Tombol `Cetak / Simpan PDF` (`window.print()`)
+  - Tombol `Kirim Email` (`mailto:lavenderpoet607@gmail.com?subject=Undangan%20Interview%20/%20Project%20Inquiry`)
+
+### 10. Footer
+
+- **Status Lencana**: `Available for hire / freelance`
+- **Hak Cipta**: `© 2024 DevPortfolio. Crafted by Ridho. All rights reserved.`
+- **Tautan Sosial Media**:
+  - **GitHub**: [github.com/lavenderpoet607](https://github.com/lavenderpoet607)
+  - **LinkedIn**: [linkedin.com/in/ridhotawang](https://linkedin.com/in/ridhotawang)
+  - **Instagram**: [instagram.com](https://instagram.com)
 
 ---
 
-## Teknologi yang Digunakan
-
-- **HTML5**: Struktur semantik modern yang aksesibel dan SEO-friendly.
-- **Tailwind CSS (CDN)**: Utility-first CSS framework dengan kustomisasi token warna desain sistem.
-- **Vanilla JavaScript (ES6+)**: Logika interaktif murni tanpa framework eksternal yang berat (cepat dan efisien).
-- **Google Fonts**: Inter & JetBrains Mono.
-- **Material Symbols Outlined**: Ikonografi modern dari Google Fonts.
-- **CSS3 Kustom (`assets/css/style.css`)**: Glassmorphism, efek glow, grid pattern, animasi denyut, dan kustomisasi scrollbar.
-
----
-
-## Struktur Direktori
+## Struktur File & Aset
 
 ```
 d:\pelatihan\project\portofolio\
-├── index.html                     # Halaman utama portofolio
+├── index.html                     # Halaman web portofolio utama
 ├── README.md                      # Dokumentasi komprehensif proyek
 └── assets/
     ├── css/
-    │   └── style.css              # Custom styling, glow effects, & glassmorphism
+    │   └── style.css              # Styling kustom (glassmorphism, glow, transisi)
     ├── js/
-    │   └── main.js                # Logika filter, modal detail, drawer menu, & scrollspy
+    │   └── main.js                # Skrip interaktivitas (filter, modal, drawer, form)
     └── images/
-        ├── profile.jpg            # Foto profil asli developer
-        ├── edu_sd.jpg             # Dokumentasi Sekolah Dasar
-        ├── edu_smp.jpg            # Dokumentasi Perguruan Global Islamic School
-        ├── edu_s1.jpg             # Dokumentasi Kampus S1 Teknik Informatika
-        ├── project_codeinko.png   # Tangkapan layar CodeIn LMS Course Platform
+        ├── profile.jpg            # Foto profil developer Ridho
+        ├── edu_sd.jpg             # Foto dokumentasi Sekolah Dasar
+        ├── edu_smp.jpg            # Foto Perguruan Global Islamic School
+        ├── edu_s1.jpg             # Foto Gedung Kampus D4 Rekayasa Perangkat Lunak
+        ├── project_codeinko.png   # Tangkapan layar CodeIn Course Platform
         ├── project_evacollection.png # Tangkapan layar Eva Collection E-Commerce
         ├── project_evapos.png     # Tangkapan layar Eva POS & ERP Dashboard
         └── project_webtopup.png   # Tangkapan layar WebTopup Game Online
@@ -139,17 +264,17 @@ d:\pelatihan\project\portofolio\
 
 ---
 
-## Cara Menjalankan
+## Cara Menjalankan Website
 
-Proyek ini tidak memerlukan kompilasi rumit karena menggunakan arsitektur statis modern. Anda dapat menjalankannya dengan beberapa opsi di bawah ini:
+Website ini berbasis statis modern tanpa ketergantungan framework runtime backend yang berat.
 
-### Opsi 1: Buka Langsung File HTML
+### 1. Membuka Langsung di Peramban
 
-Klik ganda file `index.html` pada File Explorer, atau buka melalui browser pilihan Anda (Google Chrome, Microsoft Edge, Mozilla Firefox, dsb.).
+Klik ganda file `index.html` dari File Explorer di Windows untuk membukanya secara langsung pada browser (Google Chrome, Microsoft Edge, Firefox, dsb.).
 
-### Opsi 2: Menggunakan Python HTTP Server (Direkomendasikan)
+### 2. Menggunakan Web Server Python (Aktif di port 8080)
 
-Buka terminal pada direktori proyek, lalu jalankan:
+Jalankan perintah berikut melalui PowerShell / Command Prompt:
 
 ```bash
 python -m http.server 8080
@@ -157,53 +282,25 @@ python -m http.server 8080
 
 Buka peramban di URL: **http://localhost:8080**
 
-### Opsi 3: Menggunakan Node.js
-
-Jika Anda memiliki Node.js terpasang:
+### 3. Menggunakan Node.js
 
 ```bash
 npx serve .
 ```
 
-atau:
-
-```bash
-npx http-server -p 8080
-```
-
-### Opsi 4: Menggunakan VS Code Live Server
-
-1. Buka folder proyek di Visual Studio Code.
-2. Klik kanan pada file `index.html`.
-3. Pilih **Open with Live Server**.
-
 ---
 
-## Daftar Proyek Unggulan
+## Kontak Resmi
 
-| Nama Proyek                 | Kategori              | Deskripsi Singkat                                                                                                   | Teknologi Kunci                                      |
-| :-------------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------- |
-| **CodeIn Course Platform**  | Web Learning LMS      | Platform edukasi online interaktif terarah dengan video learning, progress tracker materi, dan kuis validasi.       | React / Next.js, Tailwind CSS, Node.js, PostgreSQL   |
-| **Eva Collection**          | Fashion E-Commerce    | Etalase busana online stylish dengan filter produk multi-varian, keranjang cerdas, dan checkout terintegrasi.       | Web E-Commerce, PHP Laravel, Midtrans Gateway, MySQL |
-| **Eva POS & ERP Dashboard** | Point of Sale & ERP   | Sistem kasir POS dan manajemen inventaris stok real-time, rekonsiliasi kasir harian, dan laporan laba rugi.         | Laravel 11, Vue.js, Chart.js, MySQL                  |
-| **WebTopup Game Online**    | High-Traffic Engine   | Layanan top-up voucher game instan (MLBB, PUBG, FF) dengan validasi akun otomatis dan auto-dispatch &lt; 10 detik.  | Flutter Web/Mobile, Tripay/Midtrans, Redis Queue     |
-| **Flutter Mobile Engine**   | Mobile Cross-Platform | Arsitektur aplikasi mobile lintas platform dengan pola state terstruktur, kapabilitas offline-first, dan biometrik. | Flutter, Dart, BLoC, Riverpod, SQLite, Firebase      |
-
----
-
-## Kontak & Kolaborasi
-
-Tertarik bekerja sama atau ingin mendiskusikan implementasi proyek web/mobile? Silakan hubungi:
-
-- **Nama**: Eka S.
-- **Peran**: Full-Stack Web & Flutter Mobile Developer
+- **Nama**: Ridho D.T
 - **WhatsApp**: [+62 813-1168-5803](https://wa.me/6281311685803)
-- **Email**: [eka.developer@example.com](mailto:eka.developer@example.com)
-- **GitHub**: [github.com](https://github.com)
-- **LinkedIn**: [linkedin.com](https://linkedin.com)
+- **Email**: [lavenderpoet607@gmail.com](mailto:lavenderpoet607@gmail.com)
+- **LinkedIn**: [linkedin.com/in/ridhotawang](https://linkedin.com/in/ridhotawang)
+- **GitHub**: [github.com/lavenderpoet607](https://github.com/lavenderpoet607)
+- **Instagram**: [instagram.com](https://instagram.com)
 
 ---
 
 ## Lisensi
 
-Proyek ini dilisensikan di bawah lisensi [MIT License](https://opensource.org/licenses/MIT). Anda bebas memodifikasi dan mengembangkan portofolio ini untuk keperluan pribadi maupun profesional.
+Proyek ini berada di bawah lisensi [MIT License](https://opensource.org/licenses/MIT).
