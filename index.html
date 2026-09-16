@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Ridho | Full-Stack Web & Flutter Mobile Developer Portfolio</title>
+  <meta name="description" content="Portfolio resmi Ridho - Full-Stack Web & Flutter Mobile Developer spesialis Clean Architecture, POS ERP, E-Commerce, dan Aplikasi Performa Tinggi."/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#0b1326",
+            "surface-tint": "#c0c1ff",
+            "on-tertiary": "#472a00",
+            "surface-dim": "#0b1326",
+            "on-background": "#dae2fd",
+            "on-tertiary-fixed": "#2a1700",
+            "primary": "#c0c1ff",
+            "secondary": "#4cd7f6",
+            "on-tertiary-container": "#3e2400",
+            "on-error": "#690005",
+            "on-surface": "#dae2fd",
+            "surface-container-lowest": "#060e20",
+            "on-secondary-container": "#00424e",
+            "tertiary": "#ffb95f",
+            "background": "#0b1326",
+            "surface-container-highest": "#2d3449",
+            "inverse-primary": "#494bd6",
+            "outline": "#908fa0",
+            "tertiary-container": "#ca8100",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-container": "#171f33",
+            "surface-bright": "#31394d",
+            "error": "#ffb4ab",
+            "on-secondary-fixed-variant": "#004e5c",
+            "on-error-container": "#ffdad6",
+            "surface-container-high": "#222a3d",
+            "inverse-on-surface": "#283044",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "on-primary-fixed": "#07006c",
+            "secondary-fixed-dim": "#4cd7f6",
+            "secondary-container": "#03b5d3",
+            "outline-variant": "#464554",
+            "tertiary-fixed-dim": "#ffb95f",
+            "primary-container": "#8083ff",
+            "surface-variant": "#2d3449",
+            "on-surface-variant": "#c7c4d7",
+            "error-container": "#93000a",
+            "on-secondary": "#003640",
+            "tertiary-fixed": "#ffddb8",
+            "primary-fixed": "#e1e0ff",
+            "surface-container-low": "#131b2e",
+            "inverse-surface": "#dae2fd",
+            "on-primary-container": "#0d0096",
+            "secondary-fixed": "#acedff",
+            "on-primary": "#1000a9",
+            "primary-fixed-dim": "#c0c1ff",
+            "on-secondary-fixed": "#001f26"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "md": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-mobile": "1rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "margin": "2rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem"
+          },
+          fontFamily: {
+            "sans": ["Inter", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"],
+            "body-lg": ["Inter"],
+            "headline-xl": ["Inter"],
+            "headline-xl-mobile": ["Inter"],
+            "body-md": ["Inter"],
+            "label-badge": ["JetBrains Mono"],
+            "display-hero": ["Inter"],
+            "headline-sm": ["Inter"],
+            "headline-lg": ["Inter"],
+            "display-hero-mobile": ["Inter"],
+            "body-sm": ["Inter"],
+            "label-mono": ["JetBrains Mono"],
+            "code-snippet": ["JetBrains Mono"]
+          },
+          fontSize: {
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-badge": ["11px", { "lineHeight": "14px", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "fontWeight": "800" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-mono": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "code-snippet": ["14px", { "lineHeight": "22px", "fontWeight": "500" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container bg-grid-pattern relative">
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+    <div class="h-16 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between">
+      
+      <a class="flex items-center gap-space-sm group" href="#beranda">
+        <div class="w-8 h-8 rounded bg-surface-container-highest border border-white/10 flex items-center justify-center transition-all group-hover:border-primary/50">
+          <span class="font-label-mono text-label-mono text-secondary group-hover:text-primary transition-colors font-bold">EP</span>
+        </div>
+        <div class="flex items-center font-label-mono text-label-mono">
+          <span class="text-on-surface font-semibold">DevPortfolio</span>
+          <span class="text-outline px-1.5">/</span>
+          <span class="text-primary">Ridho</span>
+          <span class="text-outline px-1.5 hidden sm:inline">/</span>
+          <span class="text-on-surface-variant hidden sm:inline">Developer</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-lg bg-surface-container-low border border-white/5">
+        <a class="desktop-nav-link px-3 py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-all" href="#tentang-saya">Tentang Saya</a>
+        <a class="desktop-nav-link px-3 py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-all" href="#pendidikan">Pendidikan</a>
+        <a class="desktop-nav-link px-3 py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-all" href="#pengalaman">Pengalaman</a>
+        <a class="desktop-nav-link px-3 py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-all" href="#proyek-unggulan">Proyek Unggulan</a>
+        <a class="desktop-nav-link px-3 py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-all" href="#tech-stack">Tech Stack</a>
+      </nav>
+
+      <div class="flex items-center gap-space-sm">
+        <button data-action="unduh-cv" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 font-body-sm text-body-sm rounded-lg bg-surface-container-high border border-white/10 text-on-surface hover:bg-surface-container-highest hover:border-secondary/40 transition-all">
+          <span class="material-symbols-outlined text-[16px] text-secondary">description</span>
+          Unduh CV
+        </button>
+        <a class="inline-flex items-center gap-1 px-4 py-1.5 font-body-sm text-body-sm font-semibold rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim transition-all shadow-md hover:shadow-primary/20" href="#hubungi-saya">
+          <span class="material-symbols-outlined text-[16px]">send</span>
+          Hubungi Saya
+        </a>
+        <a href="#tentang-saya" class="w-8 h-8 rounded-full bg-surface-container-high border border-white/10 flex items-center justify-center hover:border-primary/50 transition-colors" title="Profil Ridho">
+          <span class="material-symbols-outlined text-primary text-[18px]">person</span>
+        </a>
+        
+        <button id="mobile-menu-btn" aria-label="Menu" aria-expanded="false" class="lg:hidden p-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-surface-container-low/95 border-b border-white/10 px-margin-mobile py-4 space-y-2 backdrop-blur-xl">
+      <a class="mobile-nav-link block px-3 py-2 rounded-lg text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#tentang-saya">Tentang Saya</a>
+      <a class="mobile-nav-link block px-3 py-2 rounded-lg text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#pendidikan">Pendidikan</a>
+      <a class="mobile-nav-link block px-3 py-2 rounded-lg text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#pengalaman">Pengalaman</a>
+      <a class="mobile-nav-link block px-3 py-2 rounded-lg text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#proyek-unggulan">Proyek Unggulan</a>
+      <a class="mobile-nav-link block px-3 py-2 rounded-lg text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#tech-stack">Tech Stack</a>
+      <div class="pt-2 border-t border-white/10 flex gap-2">
+        <button data-action="unduh-cv" class="flex-1 inline-flex justify-center items-center gap-1.5 px-3 py-2 text-body-sm rounded-lg bg-surface-container-high text-on-surface border border-white/10">
+          <span class="material-symbols-outlined text-[16px] text-secondary">description</span>
+          Unduh CV
+        </button>
+        <a class="flex-1 inline-flex justify-center items-center gap-1 px-3 py-2 text-body-sm font-semibold rounded-lg bg-primary text-on-primary" href="#hubungi-saya">
+          <span class="material-symbols-outlined text-[16px]">send</span>
+          Hubungi
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-16 min-h-screen">
+    <div class="flex flex-col w-full" id="beranda">
+
+      <div class="relative w-full overflow-hidden">
+        <div class="absolute -top-40 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
+        <div class="absolute top-96 right-10 w-[450px] h-[450px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
+
+        <section class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-10 md:pt-16 pb-16 w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+            
+            <div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+              
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high border border-white/10 shadow-md">
+                <span class="relative flex h-2.5 w-2.5">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+                </span>
+                <span class="font-label-badge text-label-badge text-secondary tracking-wide uppercase font-semibold">Tersedia untuk Proyek Baru & Full-time</span>
+              </div>
+
+              <h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface tracking-tight font-extrabold leading-tight">
+                Membangun Pengalaman Web &amp; Mobile yang <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary-container">Cepat, Skalalabel,</span> dan Berdampak.
+              </h1>
+
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                Full-Stack Web &amp; Flutter Mobile Developer berfokus pada performa tinggi, clean architecture, dan UI/UX yang memikat pengguna untuk skala startup hingga enterprise.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-space-sm pt-2">
+                <a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-on-primary font-body-md text-body-md font-semibold shadow-lg hover:bg-primary-fixed-dim transition-all hover:-translate-y-0.5" href="#proyek-unggulan">
+                  <span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+                  Lihat Proyek Unggulan
+                </a>
+                <a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold hover:bg-surface-container-highest border border-white/10 transition-all hover:-translate-y-0.5 shadow-sm" href="#hubungi-saya">
+                  <span class="material-symbols-outlined text-[20px] text-secondary">mail</span>
+                  Hubungi Saya
+                </a>
+              </div>
+
+              <div class="w-full mt-4 p-3 rounded-lg bg-surface-container-lowest border border-white/5 shadow-inner flex flex-wrap items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="font-label-mono text-label-mono text-secondary font-semibold">$ stack --status</span>
+                  <span class="font-label-mono text-label-mono text-on-surface-variant">Flutter 3.x, React 19, Laravel 11, Node.js</span>
+                </div>
+                <div class="flex items-center gap-1.5 font-label-badge text-label-badge text-tertiary">
+                  <span class="material-symbols-outlined text-[14px]">bolt</span> Ready for Production
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 relative">
+              <div class="relative mx-auto max-w-[380px] lg:max-w-none">
+                <div class="absolute -inset-2 rounded-2xl bg-gradient-to-tr from-secondary/20 via-primary/20 to-tertiary/20 blur-xl opacity-60"></div>
+                <div class="relative rounded-xl overflow-hidden bg-surface-container border border-white/10 shadow-xl">
+                  
+                  <div class="h-[430px] w-full overflow-hidden relative group">
+                    <img alt="Foto Profil Developer Ridho" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700" src="assets/images/profile.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+                    
+                    <div class="absolute top-4 right-4 p-2 rounded-lg bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 shadow-md flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+                      <span class="font-label-badge text-label-badge text-on-surface">Verified Lead Dev</span>
+                    </div>
+
+                    <div class="absolute bottom-4 left-4 right-4 p-3 rounded-lg bg-surface-container-high/90 backdrop-blur-md border border-white/10 shadow-lg flex items-center justify-between">
+                      <div>
+                        <p class="font-headline-sm text-body-md font-semibold text-on-surface">Ridho D.T</p>
+                        <p class="font-label-mono text-label-mono text-secondary">Cross-Platform Specialist</p>
+                      </div>
+                      <div class="h-8 w-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                        <span class="material-symbols-outlined text-[18px]">terminal</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-3 gap-1 p-3 bg-surface-container-low text-center border-t border-white/5">
+                    <div class="p-2 rounded bg-surface-container">
+                      <p class="font-headline-sm text-headline-sm text-primary font-bold">3+</p>
+                      <p class="font-label-badge text-label-badge text-on-surface-variant">Thn Pengalaman</p>
+                    </div>
+                    <div class="p-2 rounded bg-surface-container">
+                      <p class="font-headline-sm text-headline-sm text-secondary font-bold">10+</p>
+                      <p class="font-label-badge text-label-badge text-on-surface-variant">Proyek Selesai</p>
+                    </div>
+                    <div class="p-2 rounded bg-surface-container">
+                      <p class="font-headline-sm text-headline-sm text-tertiary font-bold">99%</p>
+                      <p class="font-label-badge text-label-badge text-on-surface-variant">Kepuasan Klien</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <section class="w-full bg-surface-container-lowest py-space-xl border-y border-white/5" id="tentang-saya">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+            <div>
+              <span class="font-label-mono text-label-mono text-secondary uppercase tracking-widest">PROFIL &amp; PRINSIP</span>
+              <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-1 font-bold">Tentang Saya</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+              Developer yang berdedikasi menciptakan solusi digital tangguh dari core logic, desain sistem UI/UX terpadu, hingga tahap rilis Google Play Store &amp; Cloud Infrastructure.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+            
+            <div class="md:col-span-2 lg:col-span-2 p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-4">
+                  <span class="material-symbols-outlined text-[24px]">developer_mode</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Dari Konsep hingga Produksi</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+                  Saya memadukan arsitektur kode terstruktur dengan estetika modern. Menangani siklus pengembangan perangkat lunak secara menyeluruh: perancangan database terdistribusi, integrasi API real-time, manajemen state reaktif di Flutter, serta optimasi build aplikasi mobile tanpa kompromi.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-primary border border-white/5">Clean Architecture</span>
+                <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-secondary border border-white/5">Reactive State</span>
+                <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-tertiary border border-white/5">CI/CD Deployments</span>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary mb-4">
+                  <span class="material-symbols-outlined text-[24px]">architecture</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Clean Architecture</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Memisahkan business logic dari presentation layer. Modular, mudah diuji (unit &amp; widget testing), dan sangat maintainable untuk ekspansi fitur jangka panjang.
+                </p>
+              </div>
+              <div class="mt-4 flex items-center gap-2 text-secondary font-label-mono text-label-mono">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span> SOLID &amp; DRY
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary mb-4">
+                  <span class="material-symbols-outlined text-[24px]">devices</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Pixel-Perfect UI</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Presisi rendering 60-120fps di iOS dan Android melalui Flutter, serta antarmuka web yang sangat responsif, aksesibel, dan memikat di berbagai resolusi layar.
+                </p>
+              </div>
+              <div class="mt-4 flex items-center gap-2 text-tertiary font-label-mono text-label-mono">
+                <span class="material-symbols-outlined text-[16px]">speed</span> High Frame Rates
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary mb-4">
+                  <span class="material-symbols-outlined text-[24px]">database</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Database &amp; API</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Optimasi kueri kompleks, caching Redis, pengamanan token JWT/Sanctum, serta orkestrasi RESTful endpoints dengan latensi minimum.
+                </p>
+              </div>
+              <div class="mt-4 flex items-center gap-2 text-primary font-label-mono text-label-mono">
+                <span class="material-symbols-outlined text-[16px]">cable</span> Low-Latency
+              </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col md:flex-row items-center justify-between gap-4 hover-glow">
+              <div class="space-y-1">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Penerbitan Google Play Store &amp; Cloud Infrastructure</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Berpengalaman mengelola App Signing, bundle release, App Store Review guidelines, deployment VPS Ubuntu, Docker containerization, dan CDN hosting.
+                </p>
+              </div>
+              <div class="flex items-center gap-3 shrink-0">
+                <div class="p-3 rounded-lg bg-surface-container-high border border-white/5 flex items-center gap-2">
+                  <span class="material-symbols-outlined text-secondary text-[20px]">shop</span>
+                  <span class="font-label-mono text-label-mono text-on-surface">Play Store Ready</span>
+                </div>
+                <div class="p-3 rounded-lg bg-surface-container-high border border-white/5 flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[20px]">cloud_done</span>
+                  <span class="font-label-mono text-label-mono text-on-surface">Cloud Active</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-surface py-space-xl" id="pendidikan">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+          
+          <div class="mb-space-lg">
+            <span class="font-label-mono text-label-mono text-primary uppercase tracking-widest">RRidhoM JEJAK AKADEMIS</span>
+            <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-1 font-bold">Tingkat Pendidikan</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
+              Perjalanan terstruktur yang menumbuhkan disiplin logika, kepemimpinan berwawasan global, hingga pendalaman rRidhoyasa perangkat lunak tingkat universitas.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            
+            <div class="rounded-xl overflow-hidden bg-surface-container border border-white/5 shadow-md flex flex-col group hover-glow">
+              <div class="h-52 w-full overflow-hidden relative">
+                <img alt="Gedung Sekolah Dasar dengan Lapangan Upacara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/edu_sd.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/20"></div>
+                <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10">
+                  <span class="font-label-badge text-label-badge text-tertiary font-semibold">Tahap Fondasi</span>
+                </div>
+                <div class="absolute bottom-3 left-3">
+                  <span class="font-label-mono text-label-mono text-white/90 bg-surface-container-high/80 px-2 py-0.5 rounded border border-white/5">2008 — 2014</span>
+                </div>
+              </div>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="font-label-mono text-label-badge text-secondary mb-1 uppercase tracking-wider font-semibold">Sekolah Dasar (SD)</p>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Pendidikan Dasar &amp; Eksplorasi Dini</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Membangun fondasi rasa ingin tahu, kecintaan pada sains dasar, dan ketertarikan awal pada dunia teknologi &amp; komputer personal.
+                  </p>
+                </div>
+                <div class="pt-4 mt-4 bg-surface-container-low p-3 rounded border border-white/5">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary">school</span>
+                    <span class="font-label-mono text-label-badge text-on-surface-variant">Fokus: Karakter &amp; Logika Dasar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-xl overflow-hidden bg-surface-container border border-white/5 shadow-md flex flex-col group hover-glow">
+              <div class="h-52 w-full overflow-hidden relative">
+                <img alt="Gedung Perguruan Global Islamic School" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/edu_smp.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/20"></div>
+                <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10">
+                  <span class="font-label-badge text-label-badge text-secondary font-semibold">Pengembangan Logika</span>
+                </div>
+                <div class="absolute bottom-3 left-3">
+                  <span class="font-label-mono text-label-mono text-white/90 bg-surface-container-high/80 px-2 py-0.5 rounded border border-white/5">2014 — 2017</span>
+                </div>
+              </div>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="font-label-mono text-label-badge text-secondary mb-1 uppercase tracking-wider font-semibold">Sekolah Menengah Pertama (SMP)</p>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">Global Islamic School</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Memperdalam kemampuan logika matematika, sains terapan, komunikasi dwi-bahasa, serta kolaborasi aktif dalam proyek studi kelompok.
+                  </p>
+                </div>
+                <div class="pt-4 mt-4 bg-surface-container-low p-3 rounded border border-white/5">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px] text-secondary">public</span>
+                    <span class="font-label-mono text-label-badge text-on-surface-variant">Wawasan Global &amp; Kolaborasi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-xl overflow-hidden bg-surface-container border border-white/5 shadow-md flex flex-col group hover-glow">
+              <div class="h-52 w-full overflow-hidden relative">
+                <img alt="Gedung Kampus Modern Pendidikan Tinggi Sarjana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/edu_s1.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-black/20"></div>
+                <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10">
+                  <span class="font-label-badge text-label-badge text-primary font-semibold">Spesialisasi Akademik</span>
+                </div>
+                <div class="absolute bottom-3 left-3">
+                  <span class="font-label-mono text-label-mono text-white/90 bg-surface-container-high/80 px-2 py-0.5 rounded border border-white/5">Pendidikan Tinggi (D4)</span>
+                </div>
+              </div>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="font-label-mono text-label-badge text-primary mb-1 uppercase tracking-wider font-semibold">Sarjana Ilmu Komputer / Informatika</p>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 font-semibold">RRidhoyasa Perangkat Lunak</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Fokus mendalam pada Software Engineering, Pengembangan Aplikasi Mobile Terdistribusi, Struktur Data &amp; Algoritma, dan Cloud Computing.
+                  </p>
+                </div>
+                <div class="pt-4 mt-4 bg-surface-container-low p-3 rounded border border-white/5">
+                  <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px] text-primary">workspace_premium</span>
+                    <span class="font-label-mono text-label-badge text-on-surface-variant">Gelar Sarjana • Skripsi Mobile Flutter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-surface-container-lowest py-space-xl border-y border-white/5" id="pengalaman">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+            <div>
+              <span class="font-label-mono text-label-mono text-tertiary uppercase tracking-widest">PENGALAMAN &amp; KONTRIBUSI</span>
+              <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-1 font-bold">Pengalaman Kerja</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+              RRidhom jejak kepemimpinan teknik, perancangan arsitektur sistem, dan eksekusi produk digital skala komersial.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="font-label-mono text-label-badge text-primary bg-primary/10 px-2.5 py-1 rounded">2023 — SRidhorang</span>
+                  <span class="font-label-mono text-label-badge text-secondary">Full-time / Lead</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Lead Mobile &amp; Full-Stack Dev</h3>
+                <p class="font-label-mono text-label-mono text-on-surface-variant mb-4">Enterprise Digital Solutions</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+                  Memimpin tim teknis dalam perancangan aplikasi Flutter multi-platform dan arsitektur backend REST API. Bertanggung jawab atas stabilitas deployment, continuous integration, dan evaluasi performa sistem real-time.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Flutter</span>
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Laravel</span>
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Docker</span>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="font-label-mono text-label-badge text-secondary bg-secondary/10 px-2.5 py-1 rounded">2021 — 2023</span>
+                  <span class="font-label-mono text-label-badge text-on-surface-variant">Contract</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Full-Stack Web Developer</h3>
+                <p class="font-label-mono text-label-mono text-on-surface-variant mb-4">Tech &amp; Retail Clients</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+                  Mengembangkan platform e-commerce dan aplikasi kasir Point of Sale (POS) modular dengan sinkronisasi inventaris multi-cabang serta integrasi payment gateway perbankan nasional.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">React</span>
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Vue.js</span>
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">MySQL</span>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="font-label-mono text-label-badge text-tertiary bg-tertiary/10 px-2.5 py-1 rounded">2020 — 2021</span>
+                  <span class="font-label-mono text-label-badge text-on-surface-variant">Internship</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">Mobile Application Engineer</h3>
+                <p class="font-label-mono text-label-mono text-on-surface-variant mb-4">Mobile Innovation Lab</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+                  Fokus pada implementasi UI/UX interaktif berbasis Flutter, manajemen cache SQLite lokal, push notification Firebase, dan otomatisasi pengujian unit test.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-1.5 pt-3 border-t border-white/5">
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Dart</span>
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Bloc</span>
+                <span class="px-2 py-0.5 rounded font-label-mono text-[11px] bg-surface-container-high text-on-surface">Firebase</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-surface-container-lowest py-space-xl" id="proyek-unggulan">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+            <div>
+              <span class="font-label-mono text-label-mono text-secondary uppercase tracking-widest">KARYA NYATA</span>
+              <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-1 font-bold">Proyek Unggulan</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
+                Kombinasi platform E-Commerce berskala tinggi, sistem Point of Sale perusahaan, portal edukasi interaktif, dan mesin top-up otomatis.
+              </p>
+            </div>
+            
+            <div class="flex items-center gap-1.5 p-1 rounded-lg bg-surface-container-low border border-white/5 self-start">
+              <button data-filter="all" class="project-filter-btn px-3 py-1.5 rounded font-label-mono text-label-mono bg-primary text-on-primary transition-all">Semua</button>
+              <button data-filter="web" class="project-filter-btn px-3 py-1.5 rounded font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface transition-all">Web</button>
+              <button data-filter="mobile" class="project-filter-btn px-3 py-1.5 rounded font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface transition-all">Mobile</button>
+              <button data-filter="pos" class="project-filter-btn px-3 py-1.5 rounded font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface transition-all">ERP/POS</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+            
+            <div data-category="web" class="project-card lg:col-span-7 rounded-xl bg-surface-container border border-white/5 overflow-hidden shadow-lg flex flex-col group hover-glow">
+              <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-surface-container-lowest cursor-pointer" data-project-trigger="codeinko">
+                <img alt="CodeIn Course Platform LMS Learning Interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/project_codeinko.png"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+                <div class="absolute top-4 left-4 flex gap-2">
+                  <span class="px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-badge text-label-badge text-secondary font-semibold">Web Learning LMS</span>
+                  <span class="px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-badge text-label-badge text-on-surface font-semibold">Production Ready</span>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">CodeIn Course Platform</h3>
+                    <span class="material-symbols-outlined text-secondary">laptop_chromebook</span>
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                    Platform kursus online interaktif terarah dengan fitur katalog video interaktif, sistem checkout sertifikasi terverifikasi, progress tracker materi siswa, dan editor kode langsung di browser.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex flex-wrap gap-2 pt-2 pb-4">
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-primary border border-white/5">React / Next.js</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-secondary border border-white/5">Tailwind CSS</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-tertiary border border-white/5">Node.js</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-on-surface-variant border border-white/5">PostgreSQL</span>
+                  </div>
+                  <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <button data-project-trigger="codeinko" class="inline-flex items-center gap-1.5 font-label-mono text-label-mono text-primary hover:text-primary-fixed transition-colors">
+                      <span class="material-symbols-outlined text-[16px]">visibility</span> Detail Proyek
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-category="web" class="project-card lg:col-span-5 rounded-xl bg-surface-container border border-white/5 overflow-hidden shadow-lg flex flex-col group hover-glow">
+              <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-surface-container-lowest cursor-pointer" data-project-trigger="evacollection">
+                <img alt="Eva Collection Fashion E-Commerce Storefront" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/project_evacollection.png"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-badge text-label-badge text-tertiary font-semibold">Fashion E-Commerce</span>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Eva Collection</h3>
+                    <span class="material-symbols-outlined text-tertiary">shopping_bag</span>
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                    Portal etalase fashion online stylish dengan pengalaman belanja ultra-responsif, filtering multi-kategori, sistem keranjang pintar, dan integrasi payment gateway instan.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex flex-wrap gap-2 pt-2 pb-4">
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-primary border border-white/5">Web E-Commerce</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-tertiary border border-white/5">Payment Gateway</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-secondary border border-white/5">UI/UX Design</span>
+                  </div>
+                  <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <button data-project-trigger="evacollection" class="inline-flex items-center gap-1.5 font-label-mono text-label-mono text-primary hover:text-primary-fixed transition-colors">
+                      <span class="material-symbols-outlined text-[16px]">visibility</span> Detail Proyek
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-category="pos web" class="project-card lg:col-span-6 rounded-xl bg-surface-container border border-white/5 overflow-hidden shadow-lg flex flex-col group hover-glow">
+              <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-surface-container-lowest cursor-pointer" data-project-trigger="evapos">
+                <img alt="Eva POS and Inventory ERP Dashboard Analytics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/project_evapos.png"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-badge text-label-badge text-secondary font-semibold">Point of Sale &amp; ERP</span>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Eva POS &amp; ERP Dashboard</h3>
+                    <span class="material-symbols-outlined text-secondary">analytics</span>
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                    Sistem POS dan manajemen stok terintegrasi dengan grafik pendapatan real-time, rekonsiliasi kasir harian, laporan hutang piutang supplier, serta sinkronisasi multi-outlet offline/online.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex flex-wrap gap-2 pt-2 pb-4">
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-primary border border-white/5">Laravel 11</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-secondary border border-white/5">Vue.js</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-tertiary border border-white/5">Chart.js</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-on-surface-variant border border-white/5">MySQL</span>
+                  </div>
+                  <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <button data-project-trigger="evapos" class="inline-flex items-center gap-1.5 font-label-mono text-label-mono text-primary hover:text-primary-fixed transition-colors">
+                      <span class="material-symbols-outlined text-[16px]">visibility</span> Detail Proyek
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-category="mobile web" class="project-card lg:col-span-6 rounded-xl bg-surface-container border border-white/5 overflow-hidden shadow-lg flex flex-col group hover-glow">
+              <div class="relative h-64 sm:h-72 w-full overflow-hidden bg-surface-container-lowest cursor-pointer" data-project-trigger="webtopup">
+                <img alt="WebTopup Game Online Voucher Engine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/project_webtopup.png"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-90"></div>
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-badge text-label-badge text-primary font-semibold">High-Traffic Engine</span>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">WebTopup Game Online</h3>
+                    <span class="material-symbols-outlined text-primary">sports_esports</span>
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                    Layanan top-up instan voucher game (Mobile Legends, PUBG, Free Fire, Genshin Impact) dengan verifikasi User ID otomatis, integrasi Tripay &amp; Midtrans, dan auto-dispatch 24/7 di bawah 10 detik.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex flex-wrap gap-2 pt-2 pb-4">
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-secondary border border-white/5">Flutter Web / Mobile</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-primary border border-white/5">Midtrans / Tripay</span>
+                    <span class="px-2.5 py-1 rounded font-label-mono text-label-badge bg-surface-container-high text-tertiary border border-white/5">Redis Queue</span>
+                  </div>
+                  <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+                    <button data-project-trigger="webtopup" class="inline-flex items-center gap-1.5 font-label-mono text-label-mono text-primary hover:text-primary-fixed transition-colors">
+                      <span class="material-symbols-outlined text-[16px]">visibility</span> Detail Proyek
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-category="mobile" class="project-card lg:col-span-12 rounded-2xl bg-gradient-to-br from-surface-container via-surface-container-high to-surface-container border border-white/10 p-6 md:p-8 shadow-xl">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                
+                <div class="lg:col-span-7 flex flex-col gap-3">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-mono text-label-mono w-fit font-semibold">
+                    <span class="material-symbols-outlined text-[16px]">smartphone</span> Flutter iOS &amp; Android Engine
+                  </div>
+                  <h3 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface font-bold">
+                    Aplikasi Mobile Lintas Platform Berkualitas Tinggi
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Membangun pengalaman native-feel di kedua platform dengan single codebase yang kokoh. Didukung oleh arsitektur manajemen state modern, arsitektur offline-first, sinkronisasi background, serta keamanan biometrik.
+                  </p>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-start gap-3">
+                      <span class="material-symbols-outlined text-secondary mt-0.5">sync</span>
+                      <div>
+                        <p class="font-body-md text-body-sm font-semibold text-on-surface">Bloc &amp; Riverpod</p>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Prediktabilitas data reaktif dan zero-glitch UI.</p>
+                      </div>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-start gap-3">
+                      <span class="material-symbols-outlined text-primary mt-0.5">cloud_off</span>
+                      <div>
+                        <p class="font-body-md text-body-sm font-semibold text-on-surface">Offline-First SQLite / Hive</p>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Operasional mulus tanpa koneksi internet aktif.</p>
+                      </div>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-start gap-3">
+                      <span class="material-symbols-outlined text-tertiary mt-0.5">notifications_active</span>
+                      <div>
+                        <p class="font-body-md text-body-sm font-semibold text-on-surface">FCM Push Notification</p>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Pemberitahuan real-time tertarget dan broadcast.</p>
+                      </div>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-surface-container-lowest border border-white/5 flex items-start gap-3">
+                      <span class="material-symbols-outlined text-secondary mt-0.5">fingerprint</span>
+                      <div>
+                        <p class="font-body-md text-body-sm font-semibold text-on-surface">Biometrik &amp; Hardware</p>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">Integrasi FaceID, Sidik Jari, Kamera, dan Bluetooth POS.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5 flex justify-center">
+                  <div class="w-full max-w-[290px] rounded-[36px] p-3 bg-surface-container-lowest border border-white/10 shadow-2xl phone-glow">
+                    <div class="w-full rounded-[26px] bg-surface border border-white/5 p-4 flex flex-col justify-between h-[420px] relative overflow-hidden">
+                      
+                      <div class="w-24 h-4 bg-surface-container-highest rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <div class="w-2 h-2 rounded-full bg-secondary"></div>
+                      </div>
+
+                      <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                          <span class="font-label-mono text-label-badge text-on-surface-variant">DevPortfolio App</span>
+                          <span class="material-symbols-outlined text-secondary text-[18px]">wifi</span>
+                        </div>
+
+                        <div class="p-3 rounded-lg bg-surface-container-high border border-white/5">
+                          <p class="font-label-badge text-label-badge text-primary font-semibold">Flutter Engine v3.27</p>
+                          <p class="font-body-sm text-body-sm font-semibold text-on-surface mt-1">POS &amp; Catalog Synced</p>
+                          <div class="w-full bg-surface-container rounded-full h-1.5 mt-2">
+                            <div class="bg-secondary h-1.5 rounded-full w-4/5"></div>
+                          </div>
+                        </div>
+
+                        <div class="space-y-1.5" id="phone-mini-list">
+                          <div class="flex items-center justify-between p-2 rounded bg-surface-container text-xs">
+                            <div class="flex items-center gap-2">
+                              <span class="material-symbols-outlined text-tertiary text-[16px]">qr_code_scanner</span>
+                              <span class="font-label-mono text-label-badge text-on-surface">Quick Topup #9842</span>
+                            </div>
+                            <span class="font-label-badge text-label-badge text-secondary font-semibold">Berhasil</span>
+                          </div>
+                          <div class="flex items-center justify-between p-2 rounded bg-surface-container text-xs">
+                            <div class="flex items-center gap-2">
+                              <span class="material-symbols-outlined text-primary text-[16px]">receipt_long</span>
+                              <span class="font-label-mono text-label-badge text-on-surface">POS Invoice #4411</span>
+                            </div>
+                            <span class="font-label-badge text-label-badge text-primary font-semibold">Paid</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button id="phone-demo-action" class="mt-4 p-2.5 rounded-lg bg-primary text-on-primary text-center font-label-mono text-label-badge font-bold hover:bg-primary-fixed-dim transition-all cursor-pointer shadow-md">
+                        Tap Simulasikan Sync Data
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-surface py-space-xl border-t border-white/5" id="tech-stack">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+            <div>
+              <span class="font-label-mono text-label-mono text-secondary uppercase tracking-widest">ARSENAL TEKNOLOGI</span>
+              <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-1 font-bold">Keahlian &amp; Tech Stack</h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+              Toolkit yang teruji di industri untuk menghasilkan produk digital berkinerja tinggi, modular, dan teruji secara otomatis.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-9 h-9 rounded bg-secondary/15 flex items-center justify-center text-secondary">
+                    <span class="material-symbols-outlined text-[20px]">phone_android</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mobile Development</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Pengembangan aplikasi iOS &amp; Android performa tinggi.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-secondary border border-white/5">Flutter</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-secondary border border-white/5">Dart</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">Android SDK</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">iOS Swift Basics</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-secondary border border-white/5">Riverpod / Bloc</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">SQLite / Hive</span>
+                </div>
+              </div>
+              <div class="mt-6 pt-3 bg-surface-container-low p-2.5 rounded text-xs text-on-surface-variant font-label-mono flex items-center gap-2 border border-white/5">
+                <span class="material-symbols-outlined text-secondary text-[16px]">bolt</span> 60 FPS Native Pipeline
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-9 h-9 rounded bg-primary/15 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[20px]">web</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Frontend Web</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Antarmuka interaktif responsif &amp; SEO-friendly.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-primary border border-white/5">JavaScript (ES6+)</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-primary border border-white/5">TypeScript</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-primary border border-white/5">React / Next.js</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-primary border border-white/5">Vue.js</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">Tailwind CSS</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">HTML5 / CSS3</span>
+                </div>
+              </div>
+              <div class="mt-6 pt-3 bg-surface-container-low p-2.5 rounded text-xs text-on-surface-variant font-label-mono flex items-center gap-2 border border-white/5">
+                <span class="material-symbols-outlined text-primary text-[16px]">speed</span> 100% Core Web Vitals
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-9 h-9 rounded bg-tertiary/15 flex items-center justify-center text-tertiary">
+                    <span class="material-symbols-outlined text-[20px]">dns</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Backend &amp; DB</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Logika bisnis terukur, database ACID, &amp; otentikasi.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-tertiary border border-white/5">Laravel / PHP</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-tertiary border border-white/5">Node.js / Express</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-tertiary border border-white/5">RESTful API</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">MySQL / MariaDB</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">PostgreSQL</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-tertiary border border-white/5">Firebase RTDB</span>
+                </div>
+              </div>
+              <div class="mt-6 pt-3 bg-surface-container-low p-2.5 rounded text-xs text-on-surface-variant font-label-mono flex items-center gap-2 border border-white/5">
+                <span class="material-symbols-outlined text-tertiary text-[16px]">lock</span> Secure Auth &amp; Tokens
+              </div>
+            </div>
+
+            <div class="p-6 rounded-xl bg-surface-container border border-white/5 shadow-md flex flex-col justify-between hover-glow">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-9 h-9 rounded bg-surface-container-highest flex items-center justify-center text-on-surface">
+                    <span class="material-symbols-outlined text-[20px]">handyman</span>
+                  </div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tools &amp; Workflow</h3>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Pipeline kolaborasi, automasi build, &amp; desain UI.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">Git / GitHub Actions</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-secondary border border-white/5">Docker Basics</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">Figma UI/UX</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-primary border border-white/5">Postman API Testing</span>
+                  <span class="px-2.5 py-1 rounded font-label-mono text-label-mono bg-surface-container-high text-on-surface border border-white/5">Linux / Nginx VPS</span>
+                </div>
+              </div>
+              <div class="mt-6 pt-3 bg-surface-container-low p-2.5 rounded text-xs text-on-surface-variant font-label-mono flex items-center gap-2 border border-white/5">
+                <span class="material-symbols-outlined text-on-surface text-[16px]">terminal</span> CI/CD Automated
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-surface-container-lowest py-space-xl border-t border-white/5" id="hubungi-saya">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+            
+            <div class="lg:col-span-5 flex flex-col justify-between">
+              <div>
+                <span class="font-label-mono text-label-mono text-secondary uppercase tracking-widest">MULAI KOLABORASI</span>
+                <h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mt-1 mb-3 font-bold">Mari Realisasikan Ide Digital Anda</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                  Punya konsep aplikasi mobile, portal e-commerce, atau sistem manajemen operasional perusahaan? Saya siap berdiskusi mengenai arsitektur, estimasi pengerjaan, dan implementasi terbaik.
+                </p>
+
+                <div class="space-y-4 mb-6">
+                  <a class="p-3.5 rounded-lg bg-surface-container border border-white/5 flex items-center gap-3 hover:bg-surface-container-high hover:border-secondary/30 transition-all shadow-sm" href="https://wa.me/6281311685803" rel="noopener noreferrer" target="_blank">
+                    <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+                      <span class="material-symbols-outlined text-[20px]">chat</span>
+                    </div>
+                    <div>
+                      <p class="font-label-mono text-label-badge text-on-surface-variant">WhatsApp Langsung</p>
+                      <p class="font-body-md text-body-md font-semibold text-on-surface">+62 813-1168-5803</p>
+                    </div>
+                  </a>
+
+                  <a class="p-3.5 rounded-lg bg-surface-container border border-white/5 flex items-center gap-3 hover:bg-surface-container-high hover:border-primary/30 transition-all shadow-sm" href="mailto:lavenderpoet607@gmail.com">
+                    <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+                      <span class="material-symbols-outlined text-[20px]">alternate_email</span>
+                    </div>
+                    <div>
+                      <p class="font-label-mono text-label-badge text-on-surface-variant">Email Profesional</p>
+                      <p class="font-body-md text-body-md font-semibold text-on-surface">lavenderpoet607@gmail.com</p>
+                    </div>
+                  </a>
+
+                  <div class="grid grid-cols-2 gap-3">
+                    <a class="p-3 rounded-lg bg-surface-container border border-white/5 hover:bg-surface-container-high hover:border-primary/30 flex items-center gap-2 transition-all" href="https://linkedin.com/in/ridhotawang" rel="noopener noreferrer" target="_blank">
+                      <span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+                      <span class="font-label-mono text-label-mono text-on-surface font-semibold">LinkedIn</span>
+                    </a>
+                    <a class="p-3 rounded-lg bg-surface-container border border-white/5 hover:bg-surface-container-high hover:border-secondary/30 flex items-center gap-2 transition-all" href="https://github.com/lavenderpoet607" rel="noopener noreferrer" target="_blank">
+                      <span class="material-symbols-outlined text-secondary text-[20px]">terminal</span>
+                      <span class="font-label-mono text-label-mono text-on-surface font-semibold">GitHub Repo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-lg bg-surface-container-low border border-white/5 flex items-center gap-3">
+                <span class="material-symbols-outlined text-tertiary text-[24px]">verified_user</span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Perjanjian Kerahasiaan (NDA) dan garansi pemeliharaan pasca rilis tersedia untuk setiap kesepakatan proyek.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="p-6 md:p-8 rounded-xl bg-surface-container border border-white/10 shadow-xl">
+                
+                <div class="flex items-center justify-between pb-4 mb-6 bg-surface-container-low -mx-6 -mt-6 md:-mx-8 md:-mt-8 p-4 rounded-t-xl border-b border-white/5">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-error inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-secondary inline-block"></span>
+                    <span class="font-label-mono text-label-badge text-on-surface-variant ml-2 font-semibold">contact_terminal.sh</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                    <span class="font-label-mono text-label-badge text-secondary font-bold">ONLINE</span>
+                  </div>
+                </div>
+
+                <form class="space-y-4" id="portfolio-contact-form">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="input-name" class="block font-label-mono text-label-mono text-on-surface mb-1.5 font-semibold">$ input --name</label>
+                      <input id="input-name" class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-white/10 text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" placeholder="Nama Lengkap Anda" required="" type="text"/>
+                    </div>
+                    <div>
+                      <label for="input-email" class="block font-label-mono text-label-mono text-on-surface mb-1.5 font-semibold">$ input --email</label>
+                      <input id="input-email" class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-white/10 text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" placeholder="nama@perusahaan.com" required="" type="email"/>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="input-subject" class="block font-label-mono text-label-mono text-on-surface mb-1.5 font-semibold">$ input --subject</label>
+                    <select id="input-subject" class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-white/10 text-on-surface text-body-md focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all">
+                      <option value="mobile">Pengembangan Aplikasi Mobile (Flutter)</option>
+                      <option value="web">Pembuatan Web / E-Commerce / LMS</option>
+                      <option value="pos">Sistem POS / ERP Inventaris</option>
+                      <option value="fulltime">Peluang Kerja / Kontrak Full-time</option>
+                      <option value="consultation">Konsultasi Arsitektur Perangkat Lunak</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="input-message" class="block font-label-mono text-label-mono text-on-surface mb-1.5 font-semibold">$ input --message</label>
+                    <textarea id="input-message" class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-white/10 text-on-surface placeholder:text-outline text-body-md focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary resize-none transition-all" placeholder="Ceritakan garis besar ide, timeline yang diharapkan, dan spesifikasi fitur yang dibutuhkan..." required="" rows="4"></textarea>
+                  </div>
+
+                  <div class="hidden p-3.5 rounded-lg bg-surface-container-high border border-secondary/30 text-secondary font-label-mono text-label-mono flex items-center gap-2.5 shadow-lg" id="form-feedback">
+                    <span class="material-symbols-outlined text-[20px] text-secondary">task_alt</span>
+                    <span>Status: 200 OK — Pesan telah terkirim! Respon konfirmasi biasanya dibalas dalam waktu &lt; 24 jam.</span>
+                  </div>
+
+                  <button id="contact-submit-btn" class="w-full py-3.5 rounded-lg bg-primary text-on-primary font-body-md text-body-md font-bold shadow-lg hover:bg-primary-fixed-dim transition-all flex items-center justify-center gap-2 mt-2 cursor-pointer hover:shadow-primary/30" type="submit">
+                    <span class="material-symbols-outlined text-[20px]">send</span>
+                    Kirim Pesan SRidhorang
+                  </button>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="w-full bg-surface-container-lowest border-t border-white/5">
+    <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+      <div class="flex flex-col items-center md:items-start gap-space-xs">
+        <div class="flex items-center gap-space-sm">
+          <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-white/5">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+            </span>
+            <span class="font-label-badge text-label-badge text-secondary uppercase tracking-wider font-semibold">Available for hire / freelance</span>
+          </div>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 DevPortfolio. Crafted by Ridho. All rights reserved.</p>
+      </div>
+
+      <div class="flex items-center gap-space-md">
+        <a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface hover:bg-surface-container border border-transparent hover:border-white/5 transition-all" href="https://github.com" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[16px] text-secondary">terminal</span>GitHub
+        </a>
+        <a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface hover:bg-surface-container border border-transparent hover:border-white/5 transition-all" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[16px] text-primary">hub</span>LinkedIn
+        </a>
+        <a class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-label-mono text-label-mono text-on-surface-variant hover:text-on-surface hover:bg-surface-container border border-transparent hover:border-white/5 transition-all" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[16px] text-tertiary">camera</span>Instagram
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="project-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md transition-opacity">
+    <div id="project-modal-content" class="w-full max-w-3xl transform transition-transform"></div>
+  </div>
+
+  <div id="cv-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-2xl rounded-2xl bg-surface-container border border-white/10 shadow-2xl p-6 space-y-6 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-secondary text-[24px]">description</span>
+          <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Curriculum Vitae — Ridho D.T</h3>
+        </div>
+        <button id="cv-modal-close" class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <div class="space-y-4 font-body-sm text-body-sm text-on-surface-variant">
+        <div class="p-4 rounded-xl bg-surface-container-low border border-white/5">
+          <h4 class="font-headline-sm text-body-md text-on-surface font-semibold mb-1">Ridho D.T</h4>
+          <p class="text-secondary font-label-mono text-label-mono mb-2">Full-Stack Web &amp; Flutter Mobile Developer</p>
+          <p class="leading-relaxed">
+            Spesialis pengembangan aplikasi lintas platform (iOS, Android, Web) dengan arsitektur terstruktur (Clean Architecture, BLoC/Riverpod), sistem ERP/POS transaksi tinggi, dan integrasi cloud/API real-time.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="font-label-mono text-label-badge text-primary uppercase font-bold mb-2 tracking-wider">PENDIDIKAN</h5>
+          <ul class="space-y-1 list-disc list-inside">
+            <li><strong class="text-on-surface">D4 Teknik Informatika / RRidhoyasa Perangkat Lunak</strong> — Fokus pada Arsitektur Mobile &amp; Distributed Systems</li>
+            <li><strong class="text-on-surface">SMP Global Islamic School</strong> (2014 — 2017)</li>
+            <li><strong class="text-on-surface">Sekolah Dasar (SD)</strong> (2008 — 2014)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-label-mono text-label-badge text-secondary uppercase font-bold mb-2 tracking-wider">KEAHLIAN INTI</h5>
+          <p class="leading-relaxed">
+            Flutter, Dart, React, Next.js, Vue.js, Laravel (PHP), Node.js, RESTful API, PostgreSQL, MySQL, Redis, Docker, Git, CI/CD, Midtrans Payment Gateway.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end gap-3 pt-4 border-t border-white/10">
+        <button id="cv-print-btn" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-surface-container-high text-on-surface font-semibold hover:bg-surface-container-highest transition-all border border-white/10">
+          <span class="material-symbols-outlined text-[18px]">print</span>
+          Cetak / Simpan PDF
+        </button>
+        <a href="mailto:lavenderpoet607@gmail.com?subject=Undangan%20Interview%20/%20Project%20Inquiry" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary font-semibold hover:bg-primary-fixed-dim transition-all shadow-md">
+          <span class="material-symbols-outlined text-[18px]">mail</span>
+          Kirim Email
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
